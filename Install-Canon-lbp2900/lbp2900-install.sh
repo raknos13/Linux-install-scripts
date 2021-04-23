@@ -1,7 +1,7 @@
 #!/bin/bash
 
-pamac install captdriver-git --no-confirm
-pamac install capt-src git --no-confirm
+pamac install captdriver-git capt-src --no-confirm
+
 systemctl enable cups.service
 systemctl start cups.service
 
