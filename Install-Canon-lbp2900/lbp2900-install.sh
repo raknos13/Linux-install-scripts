@@ -1,6 +1,7 @@
 #!/bin/bash
 
-yay -S captdriver-git capt-src --noconfirm
+#yay -S captdriver-git capt-src --noconfirm
+pamac build captdriver-git capt-src --no-confirm
 
 systemctl enable cups.service
 systemctl start cups.service
